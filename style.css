@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    background-color: var(--azulBack);
+    color: white;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    background-color: var(--azulBack);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    gap: 0.5rem;
+    z-index: 2;
+}
+
+    header img {
+        height: 2rem;
+    }
+
+    header span {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+.espacoSuperior {
+    height: 4rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.quadrado {
+    box-sizing: border-box;
+    width: 90%;
+    background-color: var(--azulEscuro);
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+    /* Título */
+    .quadrado h1 {
+        font-size: 4.5rem;
+        position: relative;
+        color: transparent;
+        -webkit-text-stroke: 4px transparent; /* Espessura da borda */
+        background: linear-gradient(90deg, #3973d4 0%, #4da5e6 50%, #85c0ec 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin: 0;
+    }
+
+    .quadrado h1::after {
+        content: attr(data-text); /* Duplica o texto */
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: var(--azulEscuro);
+    }
+
+    /* Subbtítulo */
+    .quadrado h2 {
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .quadrado p {
+        margin: 1.5rem 0 0.8rem 0;
+    }
+
+    /* Legendas dos quadrados */
+    .quadrado h3 {
+        color: var(--azul);
+        margin: 0;
+    }
+
+.contato {
+    gap: 2rem;
+}
+
+    .contato div {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        width: 90%;
+        text-align: left;
+    }
+
+        .contato div .texto {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .contato .icon {
+            width: 1.5rem;
+        }
+
+        .contato h4 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .contato span {
+            font-size: 1.1rem;
+        }
+
+        .contato .flecha {
+            height: 2rem;
+        }
+
+
+.site {
+    padding: 1rem;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.site .banner {
+    width: 100%;
+    border-radius: 0.7rem;
+    opacity: 0.8;
+}
+
+    .site h4 {
+        margin: 1.5rem 0 1rem 0;
+    }
+
+    .site span {
+        margin-bottom: 3rem;
+    }
+    
+        .site a {
+            text-decoration: none;
+            color: inherit;
+            margin-top: auto;
+            width: 100%;
+        }
+
+            .site .acessarSite {
+                background-color: var(--azulEscuro2);
+                border-bottom-left-radius: 0.7rem;
+                border-bottom-right-radius: 0.7rem;
+                height: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.3rem;
+            }
+
+
+                .site .acessarSite span {
+                    color: var(--azulClaro);
+                    font-size: 0.9rem;
+                    margin: 0;
+                }
+
+                .site .acessarSite img {
+                    height: 0.8rem;
+                    transform: rotate(-45deg);
+                }
+
+
+footer {
+    width: 100%;
+}
+
+    footer .espacoFinal {
+        height: 10rem;
+    }
+
+    footer .rodape {
+        background-color: var(--cinzaEscuro);
+        height: 7rem;
+        font-size: 0.8rem;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+        .quadrado {
+            min-width: 30%;
+            flex: 1;
+        }
+
+        .titulo, .contato {
+            height: 15rem;
+        }
+
+            .titulo .texto {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .titulo h2 {
+                margin-top: 0.9rem;
+            }
+
+            .titulo p {
+                margin: 1.5rem 3rem 0.8rem 3rem;;
+            }
+
+            .contato div {
+                width: 80%;
+            }
+
+        /* .titulo {
+            flex: 3;
+        }
+
+        .contato {
+            flex: 1;
+        } */
+
+
+    .titulo, .contato {
+        min-width: 40%;
+    }
+
+        .site {
+            height: 27rem;
+        }
+}
