@@ -1,0 +1,14 @@
+.mask {
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+}
+
+.sites {
+    -webkit-mask-image: url('assets/svg/itensCaixas/sites.svg');
+    mask-image: url('assets/svg/itensCaixas/sites.svg');
+}

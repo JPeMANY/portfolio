@@ -1,0 +1,268 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--corpo);
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1rem 1.5rem;
+    border-bottom: 2px solid var(--preto);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+    .fraseIdeias {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 20rem;
+    }
+
+        .fraseIdeias .marcaTexto {
+            position: absolute;
+        }
+
+        .fraseIdeias img {
+            z-index: 0;
+        }
+
+    /* Estilos para as caixas */
+    .caixa {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .sombra {
+        z-index: -1;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        margin: 4px 0 0 4px;
+    }
+    /* --- */
+
+    .itensCaixas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+        .itensCaixas .item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 6rem;
+            height: 6rem;
+        }
+
+            /* Compensar a deformação das caixas */
+            .itensCaixas h2, .itensCaixas .icone {
+                margin: 0.5rem 0.5rem 0 0;
+            }
+
+            .itensCaixas h2 {
+                font-family: var(--titulo);
+                font-size: 0.7rem;
+                text-align: center;
+            }
+
+            .itensCaixas .icone {
+                width: 60%;
+            }
+
+
+    .botaoContratar {
+        position: relative;
+        width: 80%;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+        .botaoContratar .marcaTexto {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .botaoContratar span {
+            z-index: 1;
+            font-family: var(--titulo);
+            font-size: 1.1rem;
+        }
+
+
+    .saberMais {
+        margin-top: 5.2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--preto);
+    }
+
+        
+    .divisorPreto {
+        margin-top: 1rem;
+        margin-bottom: -1px;
+        width: 100%;
+    }
+
+    .portfolio {
+        background-color: var(--preto);
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: var(--branco);
+    }
+
+        .portfolio .titulo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.7rem;
+        }
+
+            .portfolio .titulo h2  {
+                font-size: 0.8rem;
+                font-weight: 100;
+                margin: 0.3rem 0;
+            }
+
+            .portfolio .titulo h1  {
+                font-family: var(--titulo);
+                font-size: 1.3rem;
+                margin: 0;
+            }
+
+
+        .portfolio .subtitulo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            width: 80%;
+            margin-top: 3rem;
+        }
+
+            .portfolio .iconSite {
+                width: 3rem;
+                height: 2.5rem;
+                background-color: #fff;
+            }
+
+            .portfolio h3 {
+                font-family: var(--titulo);
+                font-weight: normal;
+                font-size: 1.2rem;
+                margin: 0 auto 0 0;
+            }
+
+
+        .portfolio .item {
+            position: relative;
+            width: 19rem;
+            height: 21.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: var(--preto);
+            gap: 1rem;
+            margin-bottom: 5rem;
+            z-index: 1;
+        }
+
+        .portfolio .sombra {
+            margin: 8px 0 0 8px;
+        }
+
+            .portfolio .imagemCapa {
+                position: relative;
+                width: 15rem;
+                height: 8rem;
+                margin-top: 2rem;
+            }
+
+                .portfolio .imagemCapa img {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    width: 100%;
+                }
+
+                .portfolio .item .mask {
+                    -webkit-mask-image: url('assets/svg/imagemClip.svg');
+                    mask-image: url('assets/svg/imagemClip.svg');
+                }
+
+                .portfolio .contorno {
+                    z-index: 1;
+                }
+            
+            .portfolio h2 {
+                font-weight: normal;
+                font-size: 1rem;
+                margin: 0;
+            }
+
+            .portfolio span {
+                font-size: 0.7rem;
+            }
+
+            .portfolio .botaoAcessar {
+                text-decoration: none;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                height: 2.5rem;
+                margin: auto 0 3rem 0;
+                color: var(--branco);
+            }
+
+                .portfolio .botaoAcessar span {
+                    z-index: 1;
+                }
+
+
+    .construcao {
+        height: 30rem;
+    }
+
+
+    /* Classes globais: */
+    .espelhar {
+        transform: scaleX(-1);
+    }

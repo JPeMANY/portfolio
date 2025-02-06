@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="31.94379mm"
+   height="31.199108mm"
+   viewBox="0 0 31.94379 31.199108"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="caixaSombra.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.0888418"
+     inkscape:cx="78.991141"
+     inkscape:cy="112.0238"
+     inkscape:window-width="1150"
+     inkscape:window-height="1000"
+     inkscape:window-x="-7"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-94.720829,-122.2375)">
+    <path
+       style="font-variation-settings:normal;fill:#1a1a1a;fill-opacity:1;stroke:#1a1a1a;stroke-width:0.504429;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal;stop-color:#000000"
+       d="m 94.97303,125.85537 c 5.1229,-0.52743 10.2873,-0.15057 15.401,-0.78979 8.5234,-1.06542 -2.7508,0.32114 5.7919,-0.92143 5.6742,-0.82534 2.6112,-0.17561 6.7132,-0.92143 0.9229,-0.1678 1.8543,-0.29904 2.7643,-0.52652 0.1241,-0.031 0.5387,-0.0918 0.6582,-0.13164 0.059,-0.0196 0.1661,-0.18326 0.1316,-0.13164 -0.8844,1.32668 -1.1438,4.30126 -1.4479,5.92347 -1.1347,6.05123 -2.0287,12.15541 -2.5011,18.29694 0,0.0251 -0.2463,5.857 -0.3948,6.0551 -0.2481,0.33068 -2.1165,0.13163 -2.5011,0.13163 -1.1407,0 -2.2819,-0.0262 -3.4224,0 -2.6773,0.0615 -5.3532,0.17305 -8.0296,0.26326 -3.2073,0.10812 -6.2844,0.14604 -9.4776,-0.13163 -0.3833,-0.0333 -1.9706,0.002 -2.501,-0.26326 -0.2458,-0.12286 -0.1316,-3.37051 -0.1316,-4.60714 0,-4.04608 -0.4003,-8.07065 -0.5265,-12.11021 -0.042,-1.35954 -0.055,-2.72149 0,-4.08061 0.1119,-2.79874 0.674,-3.65398 -0.5266,-6.0551 z"
+       id="path61-1" />
+  </g>
+</svg>

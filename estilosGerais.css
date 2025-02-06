@@ -1,10 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
-    --cinzaEscuro: #0b0e23;
-    --azulBack: #121954;
-    --azulEscuro: #102364;
-    --azulEscuro2: #1c3179;
-    --azul: #50a4f4;
-    --azulClaro: #6bb4e9;
+    --branco: #f9fafb;
+    --preto: #1d1e20;
+    --titulo: 'AnimeAce', Arial, Helvetica, sans-serif;
+    --corpo: 'ClassicComic', Arial, Helvetica, sans-serif;
+}
+
+/* Fonte para TÍTULO */
+@font-face {
+    font-family: 'AnimeAce';
+    src: url('assets/fonts/AnimeAce20BB.woff2') format('woff2'),
+    url('assets/fonts/AnimeAce20BB.woff') format('woff');
+}
+
+/* Fonte para CORPO */
+@font-face {
+    font-family: 'ClassicComic';
+    src: url('assets/fonts/ClassicComic.woff2') format('woff2'),
+    url('assets/fonts/ClassicComic.woff') format('woff');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    scroll-margin-top: 3rem;
 }
