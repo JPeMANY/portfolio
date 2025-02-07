@@ -16,7 +16,7 @@ header {
     width: 100%;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     border-bottom: 2px solid var(--preto);
 }
 
@@ -33,17 +33,63 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
-        height: 20rem;
+        width: 18rem;
+        height: 18rem;
     }
 
         .fraseIdeias .marcaTexto {
             position: absolute;
+            z-index: -1;
         }
 
         .fraseIdeias img {
+            width: 100%;
+        }
+
+        .fraseSVG {
+            z-index: 2;
+        }
+
+        .fraseIdeias .mt1::after {
+            content: '';
+            background-color: var(--branco);
+            width: 20rem;
+            height: 9rem;
+            position: absolute;
+            left: -5%;
+            top: -10%;
+            transform: rotate(-25deg);
+            animation: marcaTexto1 linear 1.5s 1s forwards;
             z-index: 0;
         }
+
+            @keyframes marcaTexto1 {
+                for {
+                    transform: translateX(0) translateY(0) rotate(-25deg);
+                }
+
+                to {
+                    transform: translateX(100%) translateY(-90%) rotate(-35deg);
+                }
+            }
+
+        .fraseIdeias .mt2::after {
+            content: '';
+            background-color: var(--branco);
+            width: 18rem;
+            height: 3rem;
+            position: absolute;
+            left: 0;
+            top: 70%;
+            animation: marcaTexto2 linear 4s 3s forwards;
+        }
+
+            @keyframes marcaTexto2 {
+                for { transform: translateX(0) }
+                to { transform: translateX(100%) }
+            }
+
+
 
     /* Estilos para as caixas */
     .caixa {
@@ -60,14 +106,14 @@ main {
         transform: translateX(-50%) translateY(-50%);
         margin: 4px 0 0 4px;
     }
-    /* --- */
 
     .itensCaixas {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 1.5rem;
+        width: 80%;
+        gap: 1.9rem;
     }
 
         .itensCaixas .item {
@@ -76,29 +122,26 @@ main {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 6rem;
-            height: 6rem;
+            width: 8rem;
+            height: 6.5rem;
         }
 
-            /* Compensar a deformação das caixas */
-            .itensCaixas h2, .itensCaixas .icone {
-                margin: 0.5rem 0.5rem 0 0;
-            }
-
             .itensCaixas h2 {
-                font-family: var(--titulo);
+                font-family: var(--corpo);
+                font-weight: normal;
                 font-size: 0.7rem;
                 text-align: center;
+                margin: 0.5rem 0 0 0;
             }
 
             .itensCaixas .icone {
-                width: 60%;
+                width: 70%;
             }
 
 
     .botaoContratar {
         position: relative;
-        width: 80%;
+        width: 15rem;
         height: 4rem;
         display: flex;
         justify-content: center;
@@ -120,12 +163,17 @@ main {
 
 
     .saberMais {
-        margin-top: 5.2rem;
+        margin: 0.5rem 0 2rem 1rem;
+        font-size: 0.8rem;
         display: flex;
         align-items: center;
         gap: 0.5rem;
         color: var(--preto);
     }
+
+        .saberMais img {
+            height: 2rem;
+        }
 
         
     .divisorPreto {
@@ -174,10 +222,8 @@ main {
             margin-top: 3rem;
         }
 
-            .portfolio .iconSite {
-                width: 3rem;
-                height: 2.5rem;
-                background-color: #fff;
+            .portfolio .icon {
+                width: 4.5rem;
             }
 
             .portfolio h3 {
@@ -238,6 +284,7 @@ main {
 
             .portfolio span {
                 font-size: 0.7rem;
+                width: 80%;
             }
 
             .portfolio .botaoAcessar {
