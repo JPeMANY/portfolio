@@ -35,3 +35,7 @@ a {
 section {
     scroll-margin-top: 3rem;
 }
+
+.none {
+    display: none !important;
+}
