@@ -1,3 +1,15 @@
+// 3 BARRAS
+
+const barras = document.querySelector('header .barra');
+const menuOpcoes = document.querySelector('header .opcoes');
+
+barras.addEventListener('click', () => {
+    menuOpcoes.classList.toggle('none')
+})
+
+
+// VISUALIZADOR IMAGENS
+
 const visualizadorImagens = document.querySelector('.visualizadorImagens');
 const btnFechar = visualizadorImagens.querySelector('.fechar');
 const imagem = visualizadorImagens.querySelector('img');
@@ -28,3 +40,11 @@ linksAbrirImg.forEach(link => {
         visualizadorImagens.classList.remove('none');
     })
 })
+
+// document.addEventListener("mousemove", (event) => {
+//     const cursor = document.querySelector(".custom-cursor");
+//     cursor.style.left = `${event.clientX}px`;
+//     cursor.style.top = `${event.clientY}px`;
+// });
+// SEGUIR O MOUSE
+

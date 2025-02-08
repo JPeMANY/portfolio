@@ -12,13 +12,35 @@ body {
 }
 
 header {
+    position: relative;
     display: flex;
     width: 100%;
+    height: 3rem;
     justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
-    padding: 0.5rem 1.5rem;
+    padding: 0 1.5rem;
     border-bottom: 2px solid var(--preto);
 }
+
+    header .opcoes {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 10rem;
+        border: 1px solid var(--preto);
+        background-color: var(--branco);
+        text-align: center;
+        right: 0;
+        top: 0;
+        transform: translateY(calc(3rem - 2px));
+        z-index: 3;
+    }
+
+        header .opcoes a {
+            padding: 0.5rem;
+            border: 1px solid var(--preto);
+        }
 
 main {
     display: flex;
@@ -137,6 +159,10 @@ main {
 
             .itensCaixas .icone {
                 width: 70%;
+            }
+
+            .itensCaixas .marcaTexto {
+                opacity: 0;
             }
 
 
@@ -344,10 +370,29 @@ main {
             max-height: 80%;
         }
 
-
-    .construcao {
-        height: 30rem;
+    .inferior {
+        margin-bottom: 4rem;
     }
+
+
+    footer {
+        background-color: var(--preto);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2rem 1rem 5rem 1rem;
+        text-align: center;
+        gap: 1rem;
+    }
+
+        footer img {
+            filter: brightness(50);
+            width: 8rem;
+        }
 
 
     /* Classes globais: */
@@ -355,16 +400,48 @@ main {
         transform: scaleX(-1);
     }
 
+    .custom-cursor {
+        width: 20px;
+        height: 20px;
+        background-color: red; /* Cor do cursor */
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none; /* Evita interferência nos cliques */
+        transform: translate(-50%, -50%);
+        transition: transform 0.1s linear;
+    }
+    
 
 
-@media (min-width: 768px) {
 
-    .item *:not(.sombra) {
+/* @media (min-width: 768px) { */
+
+    .item *, .botaoContratar *, .subtitulo .icon {
         transition: all 0.5s ease;
     }
 
-    .item:hover *:not(.sombra) {
+    .itensCaixas .item:hover *:not(.sombra) {
         transform: scale(1.1) translateX(-8px) translateY(-8px);
     }
 
-}
+    .itensCaixas .item:hover .marcaTexto {
+        opacity: 1;
+    }
+
+    .botaoContratar:hover *:not(.sombra) {
+        transform: scale(1.1) translateX(-8px) translateY(-8px);
+    }
+
+    .subtitulo:hover .icon {
+        transform: rotate(-15deg) scale(1.1);
+    }
+/* 
+    .itensLinks {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: space-between;
+    } */
+
+/* } */
