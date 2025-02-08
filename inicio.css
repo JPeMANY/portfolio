@@ -82,7 +82,7 @@ main {
             left: -5%;
             top: -10%;
             transform: rotate(-25deg);
-            animation: marcaTexto1 linear 1.5s 1s forwards;
+            animation: marcaTexto1 linear 0.5s 1s forwards;
             z-index: 0;
         }
 
@@ -104,7 +104,7 @@ main {
             position: absolute;
             left: 0;
             top: 70%;
-            animation: marcaTexto2 linear 4s 3s forwards;
+            animation: marcaTexto2 linear 1.5s 1.5s forwards;
         }
 
             @keyframes marcaTexto2 {
