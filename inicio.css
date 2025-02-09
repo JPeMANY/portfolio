@@ -1,4 +1,20 @@
-
+.siteConstrucao {
+    opacity: 0.9;
+    width: 10rem;
+    height: 7rem;
+    background-color: rgb(235, 73, 73);
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid var(--preto);
+    box-shadow: 0.5rem 0.5rem var(--preto);
+}
 
 body {
     margin: 0;
@@ -112,6 +128,10 @@ main {
                 to { transform: translateX(100%) }
             }
 
+    .imagemInicial {
+        display: none;
+    }
+
 
 
     /* Estilos para as caixas */
@@ -207,7 +227,16 @@ main {
         margin-top: 1rem;
         margin-bottom: -1px;
         width: 100%;
+        display: flex;
     }
+
+        .divisorPreto img {
+            width: 100%;
+        }
+
+        .divisorPreto .divisor2 {
+            display: none;
+        }
 
     .portfolio {
         background-color: var(--preto);
@@ -414,9 +443,8 @@ main {
 
 
 
-/* @media (min-width: 768px) { */
 
-    .item *, .botaoContratar *, .subtitulo .icon {
+    .item *, .botaoContratar *, .subtitulo * {
         transition: all 0.5s ease;
     }
 
@@ -435,13 +463,55 @@ main {
     .subtitulo:hover .icon {
         transform: rotate(-15deg) scale(1.1);
     }
-/* 
+
+    .subtitulo:hover h3 {
+        transform: scale(1.1);
+    }
+
+@media (min-width: 768px) {
+
+    header {
+        padding: 0 20%;
+    }
+
+    .inicio {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 60%;
+        height: 25rem;
+    }
+
+        .fraseIdeias {
+            width: 20rem;
+        }
+
+        .imagemInicial {
+            display: block;
+            width: 30rem;
+            
+        }
+
+            .imagemInicial img {
+                width: 100%;
+            }
+
+    .itensCaixas {
+        width: 60%;
+        justify-content: space-between;
+    }
+
     .itensLinks {
         width: 80%;
         display: flex;
         flex-wrap: wrap;
         gap: 3rem;
         justify-content: space-between;
-    } */
+    }
 
-/* } */
+    .divisorPreto .divisor2 {
+        display: block;
+        margin-left: -2px;
+    }
+
+}
