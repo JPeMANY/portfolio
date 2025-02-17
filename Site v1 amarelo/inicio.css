@@ -58,57 +58,6 @@ header {
             border: 1px solid var(--preto);
         }
 
-/* Estilos para as caixas */
-.caixa {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.sombra {
-    z-index: -1;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    margin: 4px 0 0 4px;
-}
-
-.itensCaixas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    gap: 1.9rem;
-}
-
-    .itensCaixas .item {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 8rem;
-        height: 6.5rem;
-    }
-
-        .itensCaixas span {
-            font-family: var(--corpo);
-            font-weight: normal;
-            font-size: 0.7rem;
-            text-align: center;
-            margin: 0.5rem 0 0 0;
-        }
-
-        .itensCaixas .icone {
-            width: 70%;
-        }
-
-        .itensCaixas .marcaTexto {
-            opacity: 0;
-        }
-
 main {
     display: flex;
     flex-direction: column;
@@ -117,63 +66,123 @@ main {
     width: 100%;
 }
 
-    .inicio {
-        width: 100%;
+    .fraseIdeias {
+        position: relative;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        width: 18rem;
+        height: 18rem;
+        overflow: hidden;
     }
 
-        .caixaTitulo {
+        .fraseIdeias .marcaTexto {
+            position: absolute;
+            z-index: -1;
+        }
+
+        .fraseIdeias img {
+            width: 100%;
+        }
+
+        .fraseSVG {
+            z-index: 2;
+        }
+
+        .fraseIdeias .mt1::after {
+            content: '';
+            background-color: var(--branco);
+            width: 20rem;
+            height: 9rem;
+            position: absolute;
+            left: -5%;
+            top: -10%;
+            transform: rotate(-25deg);
+            animation: marcaTexto1 linear 0.5s 1s forwards;
+            z-index: 0;
+        }
+
+            @keyframes marcaTexto1 {
+                for {
+                    transform: translateX(0) translateY(0) rotate(-25deg);
+                }
+
+                to {
+                    transform: translateX(100%) translateY(-90%) rotate(-35deg);
+                }
+            }
+
+        .fraseIdeias .mt2::after {
+            content: '';
+            background-color: var(--branco);
+            width: 18rem;
+            height: 3rem;
+            position: absolute;
+            left: 0;
+            top: 70%;
+            animation: marcaTexto2 linear 1.5s 1.5s forwards;
+        }
+
+            @keyframes marcaTexto2 {
+                for { transform: translateX(0) }
+                to { transform: translateX(100%) }
+            }
+
+    .imagemInicial {
+        display: none;
+    }
+
+
+
+    /* Estilos para as caixas */
+    .caixa {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .sombra {
+        z-index: -1;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        margin: 4px 0 0 4px;
+    }
+
+    .itensCaixas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        gap: 1.9rem;
+    }
+
+        .itensCaixas .item {
             position: relative;
-            width: 70%;
-            height: 10rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin: 1rem 0;
-            gap: 0.5rem;
+            width: 8rem;
+            height: 6.5rem;
         }
 
-            .caixaTitulo h2 {
+            .itensCaixas h2 {
+                font-family: var(--corpo);
                 font-weight: normal;
-                font-size: 1rem;
-                margin: 0;
+                font-size: 0.7rem;
+                text-align: center;
+                margin: 0.5rem 0 0 0;
             }
 
-            .caixaTitulo h1 {
-                position: relative;
-                margin: 0;
-                font-family: var(--titulo);
-                font-size: 2rem;
-                font-weight: normal;
-                line-height: 2rem;
-                z-index: 1;
+            .itensCaixas .icone {
+                width: 70%;
             }
 
-            .caixaTitulo h1::after {
-                content: '';
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                top: 25%;
-                height: 3rem;
-                width: 130%;
-                background-color: var(--amarelo);
-                opacity: 0.45;
-                z-index: -1;
-
-                -webkit-mask-repeat: no-repeat;
-                -webkit-mask-size: contain;
-                -webkit-mask-position: center;
-            
-                mask-repeat: no-repeat;
-                mask-size: contain;
-                mask-position: center;
-
-                -webkit-mask-image: url('assets/svg/marcaTextoTitulo.svg');
-                mask-image: url('assets/svg/marcaTextoTitulo.svg');
+            .itensCaixas .marcaTexto {
+                opacity: 0;
             }
 
 

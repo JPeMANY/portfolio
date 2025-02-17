@@ -1,8 +1,11 @@
 :root {
-    --branco: #f9fafb;
-    --preto: #1d1e20;
     --titulo: 'AnimeAce', Arial, Helvetica, sans-serif;
     --corpo: 'ClassicComic', Arial, Helvetica, sans-serif;
+
+    --branco: #f9fafb;
+    --preto: #1d1e20;
+    --azul: #00cdff;
+    --amarelo: #ffff00;
 }
 
 /* Fonte para TÍTULO */

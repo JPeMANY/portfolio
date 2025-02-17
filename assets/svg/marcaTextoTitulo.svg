@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="91.3125mm"
+   height="25.482241mm"
+   viewBox="0 0 91.3125 25.482241"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="marcaTextoTitulo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.52221046"
+     inkscape:cx="26.809114"
+     inkscape:cy="-240.32456"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-79.769531,-120.65838)">
+    <path
+       style="opacity:1;fill:#000000;stroke-linecap:square;stroke-linejoin:round;fill-opacity:1"
+       d="m 113.01367,120.67578 c -2.77919,-0.073 -21.232278,-0.25793 -25.619139,7.52344 l -7.625,2.26172 4.648438,15.67968 c 5.707411,-1.56775 11.467186,-2.84054 15.480468,-7.51171 26.019663,-7.18502 54.340963,13.29438 65.011723,4.02148 l 6.17187,-5.36328 -10.72656,-12.34375 -4.36719,3.79492 c -14.00245,-3.65854 -28.47171,-7.35029 -42.97461,-8.0625 z"
+       id="path58-7-4-4"
+       sodipodi:nodetypes="sccccccccs" />
+  </g>
+</svg>
