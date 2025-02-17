@@ -25,6 +25,8 @@ body {
     font-family: var(--corpo);
     background-color: var(--branco);
     color: var(--preto);
+
+    background: radial-gradient(circle, #ececec 15%, transparent 15%) 0 0 / 8px 8px;
 }
 
 header {
@@ -430,10 +432,6 @@ main {
         transform: translate(-50%, -50%);
         transition: transform 0.1s linear;
     }
-    
-
-
-
 
     .item *, .botaoContratar *, .subtitulo * {
         transition: all 0.5s ease;
@@ -462,35 +460,23 @@ main {
 @media (min-width: 768px) {
 
     header {
-        padding: 0 20%;
+        padding: 0 10%;
     }
 
     .inicio {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 60%;
-        height: 25rem;
+        width: 80%;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
     }
 
-        .fraseIdeias {
-            width: 20rem;
+        .inicio .caixaTitulo {
+            width: 23rem;
         }
 
-        .imagemInicial {
-            display: block;
-            width: 30rem;
-            
-        }
-
-            .imagemInicial img {
-                width: 100%;
-            }
-
-    .itensCaixas {
-        width: 60%;
-        justify-content: space-between;
-    }
+    /* .itensCaixas {
+        width: 100%;
+    } */
 
     .itensLinks {
         width: 80%;
