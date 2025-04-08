@@ -1,6 +1,6 @@
 // 3 BARRAS
 
-const barras = document.querySelector('header .barra');
+const barras = document.querySelector('header .barraMobile');
 const menuOpcoes = document.querySelector('header .opcoes');
 
 barras.addEventListener('click', () => {
@@ -48,3 +48,28 @@ linksAbrirImg.forEach(link => {
 // });
 // SEGUIR O MOUSE
 
+
+
+
+// Animação botões
+const botoes = document.querySelectorAll('.botao');
+
+// botoes.forEach(botao => {
+//     botao.addEventListener('click', () => {
+//         const imagens = document.querySelectorAll('img');
+//         imagens.forEach(img => img.classList.toggle('oculto'));
+//     })
+// })
+
+botoes.forEach(botao => {
+    botao.addEventListener('mouseenter', mudarImagem);
+    botao.addEventListener('mouseleave', mudarImagem);
+})
+
+function mudarImagem(event) {
+    const imagens = event.currentTarget.querySelectorAll('img');
+    imagens.forEach(img => img.classList.toggle('oculto'));
+
+    const txt = event.currentTarget.querySelector('span');
+    txt.classList.toggle('margemSpan');
+}

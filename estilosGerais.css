@@ -4,8 +4,11 @@
 
     --branco: #f9fafb;
     --preto: #1d1e20;
-    --azul: #00cdff;
+    --azul: #448faeff;
+    --azulEscuro: #21586f;
     --amarelo: #ffff00;
+
+    --margemLateral: 18rem;
 }
 
 /* Fonte para TÍTULO */
@@ -26,9 +29,9 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+/* body {
     cursor: url('assets/svg/mouse.svg'), auto;
-}
+} */
 
 button {
     cursor: pointer;
@@ -45,4 +48,8 @@ section {
 
 .none {
     display: none !important;
+}
+
+.oculto {
+    opacity: 0;
 }
