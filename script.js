@@ -34,8 +34,8 @@ linksAbrirImg.forEach(link => {
         const info = dados[id];
         imagem.src = 'assets/images/hd/' + info.url;
         legenda.textContent = info.legenda;
-        console.log(info.url)
-        console.log(info.legenda)
+        // console.log(info.url)
+        // console.log(info.legenda)
 
         visualizadorImagens.classList.remove('none');
     })

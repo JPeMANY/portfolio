@@ -304,6 +304,7 @@ main {
                 height: 2.5rem;
                 margin: auto 0 3.5rem 0;
                 color: var(--branco);
+                cursor: pointer;
             }
 
                 .portfolio .botaoAcessar span {
@@ -314,12 +315,13 @@ main {
 
 
     .visualizadorImagens {
+        margin-top: 3rem;
         z-index: 2;
         position: fixed;
         left: 0;
         top: 0;
         width: 100%;
-        height: 100vh;
+        height: calc(100vh - 3rem);
         background-color: #242424a9;
         color: var(--branco);
         
@@ -340,6 +342,7 @@ main {
             font-weight: 100;
             text-align: left;
             width: 70%;
+            cursor: pointer;
         }
 
         .visualizadorImagens .iconFechar {
